@@ -1,0 +1,13 @@
+package com.ravi.address.service;
+
+import com.ravi.address.entity.Address;
+import com.ravi.address.model.AddressDetails;
+
+public class AddressService {
+
+	public Address saveAddress(AddressDetails addressDetails) {
+		
+		return null;
+	}
+
+}

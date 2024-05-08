@@ -1,0 +1,5 @@
+package com.ravi.student.model;
+
+public class StudentDetails {
+
+}

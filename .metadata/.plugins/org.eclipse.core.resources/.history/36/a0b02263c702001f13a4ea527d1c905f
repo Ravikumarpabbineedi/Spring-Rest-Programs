@@ -1,0 +1,8 @@
+package com.ravi.student.service;
+
+import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
+
+@LoadBalancerClient
+public class AddressLoadBalConfig {
+
+}

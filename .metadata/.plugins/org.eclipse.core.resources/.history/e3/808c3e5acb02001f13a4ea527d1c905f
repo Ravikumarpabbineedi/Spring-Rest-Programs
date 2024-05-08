@@ -1,0 +1,26 @@
+spring.application.name=Student-Service
+
+server.port=8181
+
+spring.datasource.url = jdbc:h2:mem:ravi
+spring.datasource.driver-class-name = org.h2.Driver
+spring.datasource.username = ravi
+spring.datasource.password = 
+
+spring.h2.console.enabled = true
+
+address.service.url = http://Localhost:2727
+
+resilience4j.circuitbreaker.instances.addressSevice.sliding-window-size = 10
+resilience4j.circuitbreaker.instances.addressSevice.failure-rate-threshold = 50
+resilience4j.circuitbreaker.instances.addressSevice.wait-duration-in-open-state = 30000
+resilience4j.circuitbreaker.instances.addressSevice.permitted-number-of-calls-in-half-open-state = 5
+
+resilience4j.circuitbreaker.instances.addressSevice.allow-health-indicator-to-fail = true
+resilience4j.circuitbreaker.instances.addressSevice.register-health-indicator = true
+
+management.health.circuitbreakers.enabled = true
+management.endpoints.web.exposure.include = health
+
+management.metrics.export.zipkin.enabled = true
+management.tracing.sampling.probability =1.0

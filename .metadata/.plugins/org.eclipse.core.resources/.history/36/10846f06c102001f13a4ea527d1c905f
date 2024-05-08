@@ -1,0 +1,5 @@
+package com.ravi.address.repo;
+
+public interface AddressRepository {
+
+}

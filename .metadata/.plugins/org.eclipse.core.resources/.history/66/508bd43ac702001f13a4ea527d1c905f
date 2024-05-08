@@ -1,0 +1,22 @@
+package com.ravi.student.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ravi.student.entity.Student;
+import com.ravi.student.model.StudentDetails;
+import com.ravi.student.model.StudentResponse;
+
+@Service
+public class StudentService {
+
+	public Student saveStudent(StudentDetails studentDetails) {
+		
+		return null;
+	}
+
+	public StudentResponse getStudentById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

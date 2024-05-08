@@ -1,0 +1,26 @@
+package com.ravi.student.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.ravi.student.entity.Student;
+import com.ravi.student.model.StudentDetails;
+import com.ravi.student.model.StudentResponse;
+
+@Service
+public class StudentService {
+
+	private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
+	
+	public Student saveStudent(StudentDetails studentDetails) {
+		
+		return null;
+	}
+
+	public StudentResponse getStudentById(Long id) {
+		
+		return null;
+	}
+
+}

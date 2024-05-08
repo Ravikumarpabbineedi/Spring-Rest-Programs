@@ -1,0 +1,11 @@
+package com.ravi.student.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CommonService {
+
+	Logger logger = LoggerFactory.getLogger(CommonService.class);
+}

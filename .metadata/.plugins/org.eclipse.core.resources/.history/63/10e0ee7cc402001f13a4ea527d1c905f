@@ -1,0 +1,5 @@
+package com.ravi.student;
+
+public class ServletInitializer {
+
+}

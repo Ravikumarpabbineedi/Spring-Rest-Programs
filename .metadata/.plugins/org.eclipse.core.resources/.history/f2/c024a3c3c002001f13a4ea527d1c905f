@@ -1,0 +1,5 @@
+package com.ravi.address.entity;
+
+public class Address {
+
+}

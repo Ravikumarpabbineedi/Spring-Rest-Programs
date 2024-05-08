@@ -1,0 +1,8 @@
+package com.ravi.student;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(value ="$Address-Service", path = "/api/address")
+public interface AddressFeignClient {
+
+}

@@ -1,0 +1,21 @@
+package com.ravi.address.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ravi.address.entity.Address;
+import com.ravi.address.model.AddressDetails;
+
+@Service
+public class AddressService {
+
+	public Address saveAddress(AddressDetails addressDetails) {
+		
+		return null;
+	}
+
+	public Address getAddressById(Long id) {
+		
+		return null;
+	}
+
+}

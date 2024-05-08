@@ -1,0 +1,35 @@
+package com.ravi.address.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ravi.address.entity.Address;
+import com.ravi.address.model.AddressDetails;
+import com.ravi.address.repo.AddressRepository;
+
+@Service
+public class AddressService {
+
+	Logger logger = LoggerFactory.getLogger(AddressService.class);
+	
+	@Autowired
+	AddressRepository addressRepository;
+	
+	public Address saveAddress(AddressDetails addressDetails) {
+		
+		Address address = new Address();
+		
+		address.setCity(addressDetails.getCity());
+		address.setStreet(addressDetails.getStreet());
+		
+		return addressRepository.save(address);
+	}
+
+	public Address getAddressById(Long id) {
+		
+		return null;
+	}
+
+}

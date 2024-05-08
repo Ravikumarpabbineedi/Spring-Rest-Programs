@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xthml"
+	  xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>List Of Available Products</h1>
+			<div class="text-center">
+				<table border="0" cellpadding="10">
+					<tbody>
+						<th>
+							<td>Product Id :</td>
+							<td>Product Name :</td>
+							<td>Product Brand :</td>
+							<td>Product MadeIn :</td>
+							<td>Product Price :</td>
+							<td>Actions :</td>
+						</th>
+						<tr th:each="product:${products}">
+							<td th:text="${product.id}"></td>
+							<td th:text="${product.name}"></td>
+			 				<td th:text="${product.brand}"></td>
+							<td th:text="${product.madeIn}"></td>
+							<td th:text="${product.price}"></td>
+							<td>
+								<a th:href="@{/products/delete/{id}(id=${product.id})}">delete |</a>
+								<a th:href="@{/products/edit/{id}(id=${product.id})}">edit</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>	

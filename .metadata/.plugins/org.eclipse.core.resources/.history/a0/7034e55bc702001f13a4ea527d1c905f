@@ -1,0 +1,5 @@
+package com.ravi.student.service;
+
+public class AddressLoadBalConfig {
+
+}
